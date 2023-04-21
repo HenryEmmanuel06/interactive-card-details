@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+padding: 0;
+}
+body{
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+color: white;
+font-family:'Space grotesk', sans-serif;
+}
+#background{
+    background: url('./images/bg-main-desktop.png');
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 400px;
+}
+.front-card{
+    background: url('./images/bg-card-front.png');
+    height: 220px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+    top: 170px;
+    left: 150px;
+    box-sizing: border-box;
+}
+.back-card{
+    background: url('./images/bg-card-back.png');
+    height: 170px;
+    width: 360px;
+    background-position: center;
+    background-size: cover;
+    text-align: right;
+    position: relative;
+    top: 200px;
+    left: 230px;
+    padding: 20px;
+   text-align: center;
+}
+.front-card h1{
+    margin-top: 40px;
+    margin-left: 40px;
+    letter-spacing: 3px;
+}
+#name-date{
+margin-top: 35px;
+}
+#cvc{
+    float: right;
+    position: relative;
+    top: 45%;
+    margin-right: 25px;
+}
+
+#card-name{
+    float: left;
+}
+#card-date{
+float: right;
+}
+.clear-fix{
+    clear: both;
+}
+
+#user-input{
+    float: right;
+   margin-top: -500px;
+   margin-right: 100px;
+}
+label{
+    color: hsl(287, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+#username{
+width: 360px;
+padding: 10px 10px;
+border-radius: 8px;
+margin-top: 10px;
+margin-bottom: 25px;
+cursor: pointer;
+border: 1px solid hsl(270, 65%, 78%);
+outline: 1px solid hsl(270, 3%, 87%);
+}
+#card-number{
+    width: 360px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+cursor: pointer;
+border: 1px solid hsl(270, 65%, 78%);
+outline: 1px solid hsl(270, 3%, 87%);     
+    }
+    #date-month{
+        width: 60px;
+        padding: 10px 10px;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-right: 15px;
+      cursor: pointer;
+      border: 1px solid hsl(270, 65%, 78%);
+            outline: 1px solid hsl(270, 3%, 87%);
+        }
+        #date-year{
+            width: 60px;
+            padding: 10px 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            margin-right: 15px;
+          cursor: pointer;
+          border: 1px solid hsl(270, 65%, 78%);
+                outline: 1px solid hsl(270, 3%, 87%);
+            }
+        #cvc-number{
+            width: 60px;
+            padding: 10px 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-left: 3px;
+        cursor: pointer;
+        border: 1px solid hsl(270, 65%, 78%);
+            outline: 1px solid hsl(270, 3%, 87%);
+            }
+            #label{
+                float: right;
+                margin-right: 150px;
+                position: relative;
+                bottom: -5px;
+                left: -11px;
+                /* margin-top: 4px; */
+            }
+            button{
+                background: hsl(287, 68%, 11%);
+                width: 385px;
+                border-radius: 10px;
+                border: none;
+padding: 10px 10px;
+text-align: center;
+color: white;
+                height: 40px;
+                cursor: pointer;
+            }
+           
+           
+            
+ul{
+    list-style: none;
+}            
+.li-1{
+   float: left;
+}
+.li-2{
+    float: right;
+    margin-right: 117px;
+ } 
+ #complete{
+    float: right;
+   margin-top: -500px;
+   margin-right: 20px;
+} 
+#complete h1{
+    color: hsl(287, 68%, 11%);
+  margin-left: -35px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}   
+#complete p{
+    color: rgb(76, 72, 72);
+    margin-left: -200px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#continue{
+    background: hsl(287, 68%, 11%);
+    width: 385px;
+    border-radius: 10px;
+    border: none;
+padding: 10px 10px;
+text-align: center;
+color: white;
+    height: 40px;
+    cursor: pointer;
+    margin-left: -120px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+
+  
+@media screen and (max-width: 992px) {
+    #background{
+        background: url('./images/bg-main-mobile.png');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        width: 992px;
+        height: 230px;
+        background-color: #f4f4f4;
+      
+      
+    } 
+    
+    .back-card{
+        background: url('./images/bg-card-back.png');
+        background-position: center;
+        background-size: cover;
+     position: relative;
+     top: -155px;
+     left: 80px;
+     width: 360px; 
+  
+  
+       
+    }
+    .front-card{
+        background: url('./images/bg-card-front.png');
+        background-position: center;
+        background-size: cover;
+     position: relative;
+     top: 187px;
+     z-index: 1;
+     left: 30px; 
+    }
+    .clear-fix{
+        clear: both;
+    }
+    #user-input{
+        float: left;
+        margin-top: 250px;
+        margin-left: 200px;
+    }
+    #user-input{
+        float: none;
+  margin-left: 50px;
+  position: absolute;
+  top: 190px;
+ 
+    }
+    #complete{
+        float: none;
+       margin-top: 250px;
+       margin-left: 180px;
+       
+    }   
+    #complete p{
+        color: rgb(76, 72, 72);
+        margin-left: -510px;
+        margin-top: 40px;
+        letter-spacing: 2px;
+      
+    }     
+    #continue{
+        background: hsl(287, 68%, 11%);
+        width: 385px;
+        border-radius: 10px;
+        border: none;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+        height: 40px;
+        cursor: pointer;
+        margin-left: -120px;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="background">
+   
+     <div class="front-card">
+        <img src="./images/card-logo.svg" alt="">
+        <h1 id="card-value">0000 0000 0000 0000</h1>
+        <section id="name-date">
+    <p id="card-name">Henry Emmanuel</p>
+    <div id="card-date">
+   <span id="card-month">00</span>/<span id="card-year">00</span>
+</div>
+        </section>
+     </div>
+     <div class="back-card">
+        <p id="cvc">000</p>
+        </div>
+       
+    </section>
+    <!-- <div class="clear-fix"></div> -->
+    <section id="user-input">
+        <form action="index-2.html">
+        <label for="username">CardHolder Name</label><br>
+        <input type="text" id="username" placeholder="e.g Henry Emmanuel" required>
+        <p id="error-name" style="color:red; margin-top: -20px;font-size: 11px;"></p>
+        <br>
+        <label for="card-number">Card Number</label>
+        <br>
+        <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required maxlength="20">
+        <p id="error-card" style="color:red; margin-top: -20px;  font-size: 11px;"></p>
+        <br>
+        <label for="date-month">EXP. DATE [MM/YY]</label> <label for="cvc" id="label">CVC</label><br>
+        <input type="text" id="date-month" placeholder="MM" required maxlength="2"><input type="text" id="date-year" placeholder="YY" required maxlength="2"><input type="text" id="cvc-number" placeholder="e.g 123" required maxlength="3"><br>
+        <ul>
+            <li class="li-1"><p id="error-date" style="color: red; margin-top: -20px; font-size: 11px;"></p></li>
+            <li class="li-2"><p id="error-cvc" style="color:red; margin-top: -20px; font-size: 11px;"></p></li>
+        </ul>
+        <button onclick="validation()">Confirm</button>
+    </form>
+    </section>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
